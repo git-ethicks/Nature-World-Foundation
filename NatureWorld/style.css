@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+header img {
+    height: 70px;
+    border: 2px solid #198754;
+}
+
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #a8e6cf !important;
+}
+
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: justify;
+}
+.card-header {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+.list-group-item {
+    transition: background-color 0.3s;
+}
+.list-group-item:hover {
+    background-color: #e9ecef;
+    padding-left: 20px;
+}
+.list-group-item i {
+    transition: margin 0.3s;
+}
+
+
+
+footer {
+    text-align: justify;
+}
+
+footer a:hover {
+    color: #198754 !important;
+    text-decoration: underline !important;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #198754;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #146c43;
+    transform: translateY(-5px);
+    opacity: 1;
+    color: white;
+}

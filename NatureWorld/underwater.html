@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater - Nature World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(to bottom, #e0f7fa, #006064); min-height: 100vh; }
+        .water-card { border-radius: 15px; overflow: hidden; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .water-img { width: 100%; height: 260px; object-fit: cover; }
+        .back-to-home {
+            position: fixed; bottom: 30px; right: 30px; background-color: #008b8b; color: white;
+            width: 50px; height: 50px; border-radius: 50%; display: flex;
+            justify-content: center; align-items: center; text-decoration: none; font-size: 22px;
+        }
+        .back-to-home:hover { background-color: #004d40; color: white; }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info sticky-top">
+        <div class="container"><a class="navbar-brand text-white" href="index.html"><i class="fas fa-fish"></i> NatureGallery</a></div>
+    </nav>
+    <div class="container my-5">
+        <h2 class="text-center text-dark fw-bold mb-4">Life Underwater</h2>
+        <div class="row g-4">
+            <div class="col-md-4"><div class="water-card"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" class="water-img" alt="Coral"></div></div>
+            <div class="col-md-4"><div class="water-card"><img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=600" class="water-img" alt="Turtle"></div></div>
+            <div class="col-md-4"><div class="water-card"><img src="asset/fish1.jpg" class="water-img" alt="Jellyfish"></div></div>
+            <div class="col-md-4"><div class="water-card"><img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=600" class="water-img" alt="Fish"></div></div>
+            <div class="col-md-4"><div class="water-card"><img src="asset/fish2.jpg" class="water-img" alt="Clownfish"></div></div>
+            <div class="col-md-4"><div class="water-card"><img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=600" class="water-img" alt="Tortoise"></div></div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-auto"><p class="mb-0">© 2025 Nature World Assignment.</p></footer>
+    <a href="index.html" class="back-to-home"><i class="fas fa-home"></i></a>
+</body>
+</html>

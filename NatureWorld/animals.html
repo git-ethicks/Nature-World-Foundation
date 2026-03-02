@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals Gallery - Nature World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+        
+
+        .navbar-nav .nav-link:hover { color: #a8e6cf !important; }
+        
+
+        .gallery-card { border: none; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .gallery-img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.4s ease; }
+        .gallery-img:hover { transform: scale(1.1); cursor: pointer; }
+        
+
+        .back-to-home {
+            position: fixed; bottom: 30px; right: 30px;
+            background-color: #198754; color: white;
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            text-decoration: none; font-size: 22px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 9999;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-to-home:hover { background-color: #146c43; color: white; transform: translateY(-3px); }
+        
+    
+        footer { margin-top: auto; }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-paw"></i> NatureGallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plants.html">Plants</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="animals.html">Animals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landscapes.html">Landscapes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="text-success fw-bold">Animal Kingdom</h2>
+            <p class="text-muted">Discover the diverse wildlife of our planet.</p>
+            <hr class="w-25 mx-auto text-success">
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm1.jpg" class="gallery-img" alt="Fox">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm2.jpg" class="gallery-img" alt="Lion">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm3.jpg" class="gallery-img" alt="Elephant">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm4.jpg" class="gallery-img" alt="Zebra">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm5.jpg" class="gallery-img" alt="Leopard">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery-card">
+                    <img src="asset/anm6.jpg" class="gallery-img" alt="Tiger">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Nature World Assignment. Designed by You.</p>
+    </footer>
+
+    <a href="index.html" class="back-to-home" title="Return to Home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
